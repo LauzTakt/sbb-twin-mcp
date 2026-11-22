@@ -1,0 +1,36 @@
+{
+  "name": "sbb-twin-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for the LauzHack 2026 Swiss rail digital twin (sbb-twin) and its backend",
+  "type": "module",
+  "bin": {
+    "sbb-twin-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "AGENTS.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/cli.js --http",
+    "test": "node --test dist-test/test/*.test.js",
+    "pretest": "tsc -p tsconfig.test.json",
+    "smoke": "node scripts/live-smoke.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/node": "^2.1.2",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.4.0",
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2"
+  }
+}
