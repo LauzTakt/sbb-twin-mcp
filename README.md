@@ -1,6 +1,6 @@
 # sbb-twin-mcp
 
-A **read-only MCP server** for the LauzHack 2026 Swiss rail digital twin ([sbb-twin](https://github.com/lauzhack2026/sbb-twin)):
+A **read-only MCP server** for the LauzHack 2026 Swiss rail digital twin ([sbb-twin](https://github.com/LauzTakt/sbb-twin)):
 live trains following SBB realtime data, control-centre disruptions with their bulletins, real SBB service alerts, station
 boards and the twin's journey planner. It lets ChatGPT, Claude, Codex or any MCP client answer questions such as *"what is
 happening on the network now?"*, *"is the IC 1 735 late?"* or *"what is the fastest way from Bern to Zürich HB right now?"*.
